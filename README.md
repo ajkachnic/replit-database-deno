@@ -5,7 +5,7 @@ This is a Deno port of [the official client for Node](https://github.com/replit/
 ## Get started
 
 ```typescript
-import { Client } from "https://deno.land/x/replit-database/mod.ts";
+import { Client } from "https://deno.land/x/replit_database/mod.ts";
 const client = new Client();
 await Client.set("key", "value");
 let key = await Client.get("key");
