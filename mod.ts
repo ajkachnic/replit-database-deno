@@ -4,7 +4,7 @@ export class Client {
    * @param {String} key Custom database URL
    */
   key: string;
-  constructor(key: string) {
+  constructor(key?: string) {
     if (key) this.key = key;
     else this.key = Deno.env.get('REPLIT_DB_URL') as string;
   }
